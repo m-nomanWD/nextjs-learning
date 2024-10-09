@@ -15,7 +15,7 @@ const Navbar = () => {
     <ul className='menu menu-horizontal md:ml-8'>
      {
       links.map((link) => {
-       return <li className='capitalize'>
+       return <li key={link.label} className='capitalize'>
         <Link href={link.href}>{link.label}</Link>
        </li>
       })
